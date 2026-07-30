@@ -18,11 +18,11 @@ while (valor_da_venda != 0) :
     
     if valor_da_venda == 0 : 
             
-        print(f'\nNumero de vendas: {total_de_vendas}'
-              f'\nValor total das vendas: {valor_total}'
-              f'\nMedia das vendas: {media_vendida}'
-              f'\nMaior valor vendido: {maior_valor}'
-              f'\nMenor valor vendido: {menor_valor}')
+        print(f'\nNumero de vendas: {total_de_vendas:.2f}'
+              f'\nValor total das vendas: {valor_total:.2f}'
+              f'\nMedia das vendas: {media_vendida:.2f}'
+              f'\nMaior valor vendido: {maior_valor:.2f}'
+              f'\nMenor valor vendido: {menor_valor:.2f}')
         break
     
     if valor_da_venda > maior_valor :
@@ -34,7 +34,3 @@ while (valor_da_venda != 0) :
     total_de_vendas += 1
     valor_total += valor_da_venda
     media_vendida = valor_total / total_de_vendas
-    
-    
-    
-    
