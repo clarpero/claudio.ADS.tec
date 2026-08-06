@@ -12,9 +12,9 @@ medias = []
 situacao_geral = []
 
 for i in range (5):
-    aluno = input('Informe o nome do aluno: ')
+    aluno = input('\nInforme o nome do aluno: ')
     alunos.append(aluno)
-    media = float(input('Informe a média do aluno: '))
+    media = float(input('\nInforme a média do aluno: '))
     medias.append(media)
     if media < 5:
         situacao_geral.append('Reprovado'.lower())
@@ -22,7 +22,11 @@ for i in range (5):
         situacao_geral.append('Aprovado'.lower())
     else:
         situacao_geral.append('Recuperaçao'.lower())
+    
+    print(f'\nNome do aluno: {aluno}'
+          f'\nMédia do aluno: {media}'
+          f'\nSituação do aluno: {situacao_geral[i]}')
 
-print(f'Aprovados: {situacao_geral.count('aprovado')}')
-print(f'Recuperação: {situacao_geral.count('recuperaçao')}')
-print(f'Reprovados: {situacao_geral.count('reprovado')}')
+print(f'\nAprovados: {situacao_geral.count('aprovado')}')
+print(f'\nRecuperação: {situacao_geral.count('recuperaçao')}')
+print(f'\nReprovados: {situacao_geral.count('reprovado')}')
