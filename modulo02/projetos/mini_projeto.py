@@ -7,7 +7,6 @@
 # 5 - Encerrar
 # Os livros deverão ser armazenados em uma lista durante toda a execução do programa.
 # Ao pesquisar ou remover um livro inexistente, o sistema deverá informar o usuário.
-opcao = None
 lista_de_livros = []
 
 while True:
@@ -19,8 +18,13 @@ while True:
         f'\n4 - Remover livro'
         f'\n5 - Encerrar')
     
-    opcao = int(input('Informe a opção desejada: '))
-    
+    opcao = input('Informe a opção desejada: ')
+    if opcao.isdecimal() == True:
+        opcao = int(opcao)
+    else:
+        print('\nOpção inválida! Informe apenas números.')
+        continue
+          
     match opcao:
         case 1:
             livro = input('Informe o nome do livro: ').lower()
@@ -28,7 +32,7 @@ while True:
         
         case 2:
             print(f'\nAqui está a lista de todos os livros cadastrados:'
-                  f'{lista_de_livros}')
+                f'{lista_de_livros}')
             
         case 3:
             livro = input('\nInforme o nome do livro para pesquisa: ').lower()
@@ -50,5 +54,5 @@ while True:
             print("\nPrograma encerrado!")
             break
         
-        case _ :
-            print = ('Opção inválida!')
+        case _:
+            print('Opção inválida!')
