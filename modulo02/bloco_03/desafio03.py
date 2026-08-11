@@ -33,8 +33,8 @@ while True:
             procurando = input('Informe o livro que voce quer adicionar informações: ').upper()
             for livro in biblioteca:
                 if livro.get('TITULO') == procurando:
-                    nova_chave = input('Qual informação deseja adicionar? (Ex.: EDITORA, EDICAO, ETC)').upper()
-                    novo_valor = input('O que voce quer adicionar nessa informação? ')
+                    nova_chave = input(f'Qual informação deseja adicionar ao livro {livro["TITULO"]}? (Ex.: EDITORA, EDICAO, ETC)').upper()
+                    novo_valor = input(f'{nova_chave} adicionado. O que voce quer adicionar nessa informação? ')
                     livro.update({nova_chave: novo_valor}) #livro[nova_chave] = novo_valor
                     print(f'\nInformação adicionada ao livro {livro["TITULO"]}!')
 
