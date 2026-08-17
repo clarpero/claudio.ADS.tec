@@ -12,7 +12,7 @@ pass
 
 def cadastrar_produto(estoque):
     produto = {}
-    produto['NOME'] = input('Informe o nome do produto: ')
+    produto['NOME'] = input('Informe o nome do produto: ').upper()
     produtuo['PRECO'] = float(input('Informe o preço do produto: '))
     produto['QUANTIDADE'] = int(input('Informe a quantidade do produto em estoque: '))
     estoque.append(produto.copy)

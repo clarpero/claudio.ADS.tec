@@ -1,0 +1,20 @@
+nome = input('Informe o seu nome: ')
+idade = int(input('Informe a sua idade: '))
+cargo = input('Informe seu cargo: ')
+salario = float(input('Informe o seu salário: '))
+cidade = input('Informe a sua cidade: ')
+
+
+print('=== APRESENTAÇÃO DE FUNCIONÁRIO ===')
+print(f'Nome: {nome}')
+print(f'Cargo: {cargo}')
+print(f'Idade: {idade}')
+print(f'Salário: {salario}')
+print(f'Cidade: {cidade}')
+
+print('\n== TIPOS DE VARIAVÉIS ==')
+print(f'Variavél Nome tipo: {type(nome)}')
+print(f'Variavél Idade tipo: {type(idade)}')
+print(f'Variavél Cargo tipo: {type(cargo)}')
+print(f'Variavél Salário tipo: {type(salario)}')
+print(f'Variavél Cidade tipo: {type(cidade)}')

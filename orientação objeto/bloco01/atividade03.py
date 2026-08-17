@@ -1,0 +1,10 @@
+nome = input('Informe o nome: ')
+idade = int(input('Informe sua idade: '))
+altura = float(input('Informe sua altura: '))
+experiencia = input('Possui experiencia em campeonatos? Sim ou Não?')
+
+print('=== FICHA DO JOGADOR ===')
+print(f'Nome: {nome}')
+print(f'Idade: {idade}')
+print(f'Altura: {altura}')
+print(f'Experiencia: {experiencia}')
